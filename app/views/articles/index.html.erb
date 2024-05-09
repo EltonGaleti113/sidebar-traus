@@ -63,7 +63,7 @@
          </svg>
       </button>
    <!-- component -->
-<div class="max-w-2xl mx-auto">
+<div class="max-w-2xl ">
 
 	<aside class="w-64" aria-label="Sidebar">
 		<div class="px-3 py-4 overflow-y-auto rounded  dark:bg-gray-800">
@@ -76,7 +76,7 @@
 							<path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
 							<path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
 						</svg>
-						<span class="ml-3">Visão Geral</span>
+						<span href="#" class="ml-3">Visão Geral</span>
 					</a>
 				</li>
 					<li>
@@ -127,45 +127,65 @@
 				</button>
 					<ul id="administration-button" class="hidden py-2 space-y-2">
 						<li>
-							<button aria-controls="administration-button-sub-1" data-collapse-toggle="administration-button-sub-1" class="w-full text-left flex items-center outline-none focus:outline-none">
-								<span class="pr-1 flex-1">Financeiro
-									<span class="mr-auto">
-										<svg class="fill-current h-4 w-4 transition duration-150 ease-in-out"
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 20 20"
-										>
-											<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-												
-											
-										</svg>
-									</span>
-								</span>
-							</button>
-							<ul id="administration-button-sub-1" class="hidden bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
-								<li>
-									java
-								</li>
-							</ul>
-						</li>
-					</ul>
+							<button type="button" class ="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="administration-button-financeiro" data-collapse-toggle="administration-button-financeiro"><span class="pr-2 flex" sidebar-toggle-item>Financeiro</span></button>
+								<ul id="administration-button-financeiro" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
+									<li>
+										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Contas Bancárias</a>
+									</li>
+								</ul>
+							</li>
+						<ul id="administration-button" class="py-2 space-y-2">
+						<li>
+							<button type="button" class ="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="administration-button-sub" data-collapse-toggle="administration-button-sub"><span class="pr-2 flex" sidebar-toggle-item>Escolar</span></button>
+								<ul id="administration-button-sub" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
+									<li>
+										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Cursos</a>
+									</li>
+									<li>
+										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">(+) Novo Curso</a>
+									</li>
+									<li>
+										<button type="button" class ="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="administration-button-turmas-e-grupos" data-collapse-toggle="administration-button-turmas-e-grupos"><span class="pr-1 flex-1" sidebar-toggle-item>Turmas e Grupos</span></button>
+										<ul id="administration-button-turmas-e-grupos" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2 pl-9">
+											<li>
+												<a class="pl-6" href="#">Visão Geral</a>
+											</li>
+											<li>
+												<a href="#">Relatório</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Salas de Aula</a>
+									</li>
+									<li>
+										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Nível/Módulo</a>
+									</li>
+									<li>
+										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Responsáveis</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</ul>	
 				<li>
-					<a href="#"
-						class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-						<svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-							fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z">
-							</path>
-							<path
-								d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z">
-							</path>
-						</svg>
-						<span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
-					</a>
+				<a href="#"
+					class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+					<svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+						fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z">
+						</path>
+						<path
+							d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z">
+						</path>
+					</svg>
+					<span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+				</a>
 				</li>
 				<li>
 					<a href="#"
-						class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+					8	class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
 						<svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
 							fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
