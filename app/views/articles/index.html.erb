@@ -1,221 +1,363 @@
 <!-- drawer init and show -->
+
 <head>
-  <meta charset="UTF-8">
+   <meta charset="UTF-8">
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-  <div class="px-3 py-3 lg:px-5 lg:pl-3">
-    <div class="flex items-center justify-between">
-      <div class="flex items-center justify-start rtl:justify-end">
-       
-        <a href="#" class="flex ms-2 md:me-24">
-          <img src="" class="h-8 me-3" alt="Traus logo" />
-          <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Traus</span>
-        </a>
+   <div class="px-3 py-3 lg:px-5 lg:pl-3">
+      <div class="flex items-center justify-between">
+         <div class="flex items-center justify-start rtl:justify-end">
+
+            <a href="#" class="flex ms-2 md:me-24">
+               <img src="" class="h-8 me-3" alt="Traus logo" />
+               <span
+                  class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Traus</span>
+            </a>
+         </div>
+         <div class="flex items-center">
+            <div class="flex items-center ms-3">
+               <div>
+                  <button type="button"
+                     class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                     aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                     <span class="sr-only">Open user menu</span>
+                     <img class="w-8 h-8 rounded-full"
+                        src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                  </button>
+               </div>
+               <div
+                  class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                  id="dropdown-user">
+                  <div class="px-4 py-3" role="none">
+                     <p class="text-sm text-gray-900 dark:text-white" role="none">
+                        Neil Sims
+                     </p>
+                     <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                        neil.sims@flowbite.com
+                     </p>
+                  </div>
+                  <ul class="py-1" role="none">
+                     <li>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                           role="menuitem">Editar</a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                           role="menuitem">Conta da Empresa</a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                           role="menuitem">Ajuda</a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                           role="menuitem">Reportar Bug</a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                           role="menuitem">Sair</a>
+
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="flex items-center">
-          <div class="flex items-center ms-3">
-            <div>
-              <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
-                <span class="sr-only">Open user menu</span>
-                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
-              </button>
-            </div>
-            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
-              <div class="px-4 py-3" role="none">
-                <p class="text-sm text-gray-900 dark:text-white" role="none">
-                  Neil Sims
-                </p>
-                <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                  neil.sims@flowbite.com
-                </p>
-              </div>
-              <ul class="py-1" role="none">
-                <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Editar</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Conta da Empresa</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Ajuda</a>
-                </li>
-                <li>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Reportar Bug</a>
-                </li>
-				 <li>
-					<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sair</a>
-				
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
+   </div>
 </nav>
 
-   <div id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
-      <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-hidden="false">
-         <span class="sr-only">Open sidebar</span>
-         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-         </svg>
-      </button>
+<div id="logo-sidebar"
+   class="overflow-scroll fixed top-0 left-0  w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700 group"
+   aria-label="logo-sidebar"
+   aria-menu="opened">
+   <button type="button" id="sidebar"
+      class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+      <span class="sr-only">Open sidebar</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+         xmlns="http://www.w3.org/2000/svg">
+         <path clip-rule="evenodd" fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+         </path>
+      </svg>
+   </button>
    <!-- component -->
-<div class="max-w-2xl overflow-clip">
-	<aside class="w-64" aria-label="Sidebar">
-		<div class="px-3 py-4 overflow-y-auto rounded  dark:bg-gray-800">
-			<ul class="space-y-2">
-				<li>
-					<a href="#"
-						class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-						<svg class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-							fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-							<path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-							<path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-						</svg>
-						<span href="#" class="ml-3">Visão Geral</span>
-					</a>
-				</li>
-					<li>
-					<a href="#"
-						class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-						<svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-							fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
-							</path>
-						</svg>
-						<span class="flex-1 ml-3 whitespace-nowrap">Quadro de Horários</span>
-					</a>
-				</li>
-				<li>
-			<button type="button" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="matriculas-button" data-collapse-toggle="matriculas-button">
-                  <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
-                  <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Matrículas</span>
-                  <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-					<ul id="matriculas-button" class="hidden py-2 space-y-2">
-						<li>
-							<a href="#"
-								class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Visão Geral</a>
-						</li>
-						<li>
-							<a href="#"
-								class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Faturas</a>
-						</li>
-						<li>
-							<a href="#"
-								class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">(+) Nova Matrícula</a>
-						</li>
-						<li>
-							<a href="#"
-								class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Matrículas sem Contratos Ativos</a>
-						</li>
-						<li>
-							<a href="#"
-								class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Relatório (Sub-class -->)</a>
-						</li>
-					</ul>
-				</li>
-				<button type="button" aria-controls="administration-button" data-collapse-toggle="administration-button" class ="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" >
-					 <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
-					<span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Administração</span>
-					<svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-				</button>
-					<ul id="administration-button" class="hidden p">
-						<li class="">
-							<button type="button" class ="items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="administration-button-financeiro" data-collapse-toggle="administration-button-financeiro"><span class="pl-7 flex" sidebar-toggle-item>Financeiro</span></button>
-								<ul id="administration-button-financeiro" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
-									<li>
-										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Contas Bancárias</a>
-									</li>
-								</ul>
-							</li>
-						<ul id="administration-button" class="py-2 space-y-2">
-						<li>
-							<button type="button" class ="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="administration-button-sub" data-collapse-toggle="administration-button-sub"><span class="pl-7 flex" sidebar-toggle-item>Escolar</span></button>
-								<ul id="administration-button-sub" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
-									<li>
-										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Cursos</a>
-									</li>
-									<li>
-										<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">(+) Novo Curso</a>
-									</li>
-									<li>
-									<button type="button" class ="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="administration-button-turmas-e-grupos" data-collapse-toggle="administration-button-turmas-e-grupos"><span class=" flex-1" sidebar-toggle-item>Turmas e Grupos</span></button>
-									<ul id="administration-button-turmas-e-grupos" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2 pl-9">
-										<li>
-											<a class="pl-6 " href="#">Visão Geral</a>
-										</li>
-										<li>
-											<a href="#">Relatório</a>
-										</li>
-									</ul>
-									</li>
-										<li>
-											<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Salas de Aula</a>
-										</li>
-										<li>
-											<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Nível/Módulo</a>
-										</li>
-										<li>
-											<a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"  href="#">Responsáveis</a>
-										</li>
-									</ul>
-									<button type="button" class ="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="administration-button-empresa" data-collapse-toggle="administration-button-empresa"><span class="pr-2 flex" sidebar-toggle-item>Empresa</span></button>
-									<ul id="administration-button-empresa" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2">
-										<li>
-											<a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
-                                 >Contratos</a>
-										</li>
-										<li>
-											<a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
-                                 >Professores</a>
-										</li>
-										<li>
-											<a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
-                                 >Pacotes de Desconto</a>
-										</li>
-										<li>
-											<a href="#" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
-                                 >Caléndario de Feriados e Eventos</a>
-										</li>
-									</ul>	
-								</li>
-							</ul>
-						</ul>
-					<li>
-						<button type="button" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="organization-button"data-collapse-toggle="organization-button">
-							<svg class="flex-shrink-0 w-6 h-6 text-gray-500 transitionz duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path>
-							</svg>
-							<span class="flex-1 ml-3 whitespace-nowrap">Organização</span>
-							<svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-						</button>
-                  <ul id="organization-button" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2 pl-9" >
-                     <li>
-                        <a href="#">Configuração</a>
-                     </li>
-                     <li>
-                        <a href="#">Usuários</a>
-                     </li>
-                  </ul>
-					</li>
-					<li>
-                  <button type="button" class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="vendas-button" data-collapse-toggle="vendas-button">
-                     <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
-                        <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Vendas</span>
-                     <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+   <div class="max-w-2xl">
+      <aside class="w-64" aria-label="Sidebar">
+         <div class="px-3 py-4 rounded  dark:bg-gray-800">
+            <ul class="space-y-2 ">
+               <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                        <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap group-[[aria-menu=opened]]:inline-block group-[[aria-menu=closed]]:hidden">Visão Geral</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                        <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap group-[[aria-menu=opened]]:inline-block group-[[aria-menu=closed]]:hidden">Quadro de Horário</span>
+                  </a>
+               </li>
+               <li>
+                  <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                     <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+                        <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+                     </svg>
+                     <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap group-[[aria-menu=opened]]:inline-block group-[[aria-menu=closed]]:hidden">Matrículas</span>
+                     <svg class="w-3 h-3 group-[[aria-menu=opened]]:inline-block group-[[aria-menu=closed]]:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                     </svg>
                   </button>
-                  <ul id="vendas-button" class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2 pl-9" >
+                  <ul id="matriculas-button" class="hidden py-2 space-y-2">
                      <li>
-                        <a href="#">Visão Geral</a>
+                        <a href="#"
+                           class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Visão
+                           Geral</a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Faturas</a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">(+)
+                           Nova Matrícula</a>
+                     </li>
+                     <li>
+                        <a href="#"
+                           class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Matrículas
+                           sem Contratos Ativos</a>
+                     </li>
+                     <li>
+                        <button type="button"
+                           class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                           aria-controls="contratos-de-matriculas-button"
+                           data-collapse-toggle="contratos-de-matriculas-button">
+                           <span class="flex-1 ml-3 text-left whitespace-nowrap"
+                              sidebar-toggle-item>Pré-Vendas</span><svg sidebar-toggle-item class="w-6 h-6"
+                              fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd"
+                                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                 clip-rule="evenodd"></path>
+                           </svg>
+                        </button>
+                     <li>
+                        <a id="contratos-de-matriculas-button"
+                           class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
+                           href="#">Contratos de Matrículas</a>
+                     </li>
+               </li>
+               </li>
+            </ul>
+            </li>
+            <button type="button" aria-controls="administration-button" data-collapse-toggle="administration-button"
+               class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+               <svg
+                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                     d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                     clip-rule="evenodd"></path>
+               </svg>
+               <span class="flex-1 ml-3 text-left whitespace-nowrap group-[[aria-menu=opened]]:inline-block group-[[aria-menu=closed]]:hidden" sidebar-toggle-item>Administração</span>
+               <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                     clip-rule="evenodd"></path>
+               </svg>
+            </button>
+            <ul id="administration-button" class="hidden">
+               <li class="">
+                  <button type="button"
+                     class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                     aria-controls="administration-button-financeiro"
+                     data-collapse-toggle="administration-button-financeiro"><span class="pl-7 flex"
+                        sidebar-toggle-item>Financeiro</span> <svg sidebar-toggle-item class="w-6 h-6"
+                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                           d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                           clip-rule="evenodd"></path>
+                     </svg></button>
+                  <ul id="administration-button-financeiro"
+                     class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
+                     <li>
+                        <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
+                           href="#">Contas Bancárias</a>
                      </li>
                   </ul>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</aside>
+               </li>
+               <ul id="administration-button" class="py-2 space-y-2">
+                  <li>
+                     <button type="button"
+                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        aria-controls="administration-button-sub" data-collapse-toggle="administration-button-sub"><span
+                           class="pl-7 flex" sidebar-toggle-item>Escolar</span> <svg sidebar-toggle-item class="w-6 h-6"
+                           fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                        </svg></button>
+                     <ul id="administration-button-sub"
+                        class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
+                        <li>
+                           <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
+                              href="#">Cursos</a>
+                        </li>
+                        <li>
+                           <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
+                              href="#">(+) Novo Curso</a>
+                        </li>
+                        <li>
+                           <button type="button"
+                              class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                              aria-controls="administration-button-turmas-e-grupos"
+                              data-collapse-toggle="administration-button-turmas-e-grupos"><span class=" flex-1"
+                                 sidebar-toggle-item>Turmas e Grupos</span>
+                              <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                              </svg>
+                           </button>
+                           <ul id="administration-button-turmas-e-grupos"
+                              class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2 pl-9">
+                              <li>
+                                 <a class="pl-6 " href="#">Visão Geral</a>
+                              </li>
+                              <li>
+                                 <a class="pl-6" href="#">Relatório</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
+                              href="#">Salas de Aula</a>
+                        </li>
+                        <li>
+                           <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
+                              href="#">Nível/Módulo</a>
+                        </li>
+                        <li>
+                           <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11"
+                              href="#">Responsáveis</a>
+                        </li>
+                     </ul>
+                     <button type="button"
+                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        aria-controls="administration-button-empresa"
+                        data-collapse-toggle="administration-button-empresa"><span class="pl-7 flex"
+                           sidebar-toggle-item>Empresa</span> <svg sidebar-toggle-item class="w-6 h-6"
+                           fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                        </svg></button>
+                     <ul id="administration-button-empresa"
+                        class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2">
+                        <li>
+                           <a href="#"
+                              class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Contratos</a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Professores</a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Pacotes
+                              de Desconto</a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-11">Caléndario
+                              de Feriados e Eventos</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </ul>
+            <li>
+               <button type="button"
+                  class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="organization-button" data-collapse-toggle="organization-button">
+                  <svg
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transitionz duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd"
+                        d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap group-[[aria-menu=opened]]:inline-block group-[[aria-menu=closed]]:hidden">Organização</span>
+                  <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+               </button>
+               <ul id="organization-button"
+                  class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2 pl-9">
+                  <li>
+                     <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-7"
+                        href="#">Configuração</a>
+                  </li>
+                  <li>
+                     <a class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 pl-7"
+                        href="#">Usuários</a>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <button type="button"
+                  class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="vendas-button" data-collapse-toggle="vendas-button">
+                  <svg
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd"
+                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap group-[[aria-menu=opened]]:inline-block group-[[aria-menu=closed]]:hidden" sidebar-toggle-item>Vendas</span>
+                  <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+               </button>
+               <ul id="vendas-button"
+                  class="hidden bg-white top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32 py-2 space-y-2 pl-9">
+                  <li>
+                     <button type="button"
+                        class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        aria-controls="vendas-button-sub" data-collapse-toggle="vendas-button-sub">
+                        <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Pré-Vendas</span><svg
+                           sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                        </svg>
+                     </button>
+                  <li id="vendas-button-sub" class="hidden flex">
+                     <a href="#" class="flex pl-11">Visão Geral</a>
+                  </li>
+            </li>
+            </ul>
+            </a>
+            </li>
+            </ul>
+         </div>
+      </aside>
