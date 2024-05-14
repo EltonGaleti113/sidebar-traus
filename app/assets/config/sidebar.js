@@ -1,8 +1,18 @@
- 
-      
-const closeMenu = document.getElementById('logo-sidebar')
+ function closeSidebar() {
+    var sidebar = document.getElementById("logo-sidebar");
+    var ariaMenu = sidebar.getAttribute("aria-menu");
 
-function closeSideBar() {
-//?Criar uma function para quando onclick for ativado, essa function entre em açao
-    closeMenu.innerHTML('')
-}
+    if (ariaMenu === "true") {
+      sidebar.setAttribute("aria-menu", "false");
+      sidebar.style.width = "65px";
+    } else {
+      sidebar.setAttribute("aria-menu", "true");
+      sidebar.removeAttribute("style");
+    }
+
+    //   if (ariaMenu === "false") {
+      
+    // } else{
+      
+    // }
+  }
