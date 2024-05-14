@@ -7,11 +7,7 @@ function closeSidebar() {
     } else {
       sidebar.setAttribute("aria-menu", "true");
       sidebar.removeAttribute("style");
-    } 
-
-    // if (sidebar.style.width === "50px") {
-    //   onclick.applysidebar.style.transform = "translatex(256)"
-    // }
+    }
   }
 
 function openSidebarByButton() {
