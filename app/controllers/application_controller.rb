@@ -4,5 +4,9 @@ class ApplicationController < ActionController::Base
         render partial: 'index'
     end
         
+    def login_page
+        render partial:'login-form'
+    end
+    
 
 end
